@@ -1,0 +1,32 @@
+[
+    {
+        "build":{
+            "type": "import",
+            "img_path": "C:\\Images\\debian-img-base",
+            "vm_dest": "C:\\Virtual Machines\\"
+        },
+        "vm":{
+            "name": "Debian-VM",
+            "processor_count": 2,
+            "memory_size": 2048,
+            "net_adapter": "Server LAN",
+            "start_action": "StartIfRunning",
+            "stop_action": "Shutdown"
+        }        
+    },
+    {
+        "build":{
+            "type": "import",
+            "img_path": "C:\\Images\\debian-img-ansible",
+            "vm_dest": "C:\\Virtual Machines\\"
+        },
+        "vm":{
+            "name": "Ansible-VM",
+            "processor_count": 1,
+            "memory_size": 2048,
+            "net_adapter": "Server LAN",
+            "start_action": "StartIfRunning",
+            "stop_action": "Shutdown"
+        }
+    }
+]
